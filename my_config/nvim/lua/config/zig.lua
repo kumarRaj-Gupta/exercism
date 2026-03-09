@@ -1,0 +1,43 @@
+-- -- placeholders in zig were annoying for me. Plus I'm currently learning so it's better if I break things.
+-- return {
+--   "neovim/nvim-lspconfig",
+--   -- @class PluginLspOpts
+--   opts = {
+--     servers = {
+--       zls = {
+--         settings = {
+--           enable_argument_placeholders = false,
+--           inlay_hints_show_parameter_name = false,
+--           inlay_hints_show_struct_literal_field_type = false,
+--           inlay_hints_show_variable_type_hints = false,
+--         },
+--         -- {
+--         --   -- other zls settings
+--         --   on_attach = function(client, bufnr)
+--         --     -- Disable LSP formatting capabilities for ZLS
+--         --     client.server_capabilities.documentFormattingProvider = false
+--         --     client.server_capabilities.documentRangeFormattingProvider = false
+--         --     -- Rest of your on_attach function
+--         --   end,
+--         -- },
+--       },
+--     },
+--   },
+--   {
+--     "stevearc/conform.nvim",
+--     opts = {
+--       formatters_by_ft = {
+--         -- Remove "zig-fmt" or "zls" from here if it is present
+--         -- Example for disabling zig formatting in conform:
+--         zig = {}, -- empty table means no formatters for zig files via conform
+--       },
+--     },
+--   },
+-- }
+-- -- → inlay_hints_exclude_single_argument                default: true
+-- -- → inlay_hints_hide_redundant_param_names             default: false
+-- -- → inlay_hints_hide_redundant_param_names_last_token  default: false
+-- -- → inlay_hints_show_builtin                           default: true
+-- -- → inlay_hints_show_parameter_name                    default: true
+-- -- → inlay_hints_show_struct_literal_field_type         default: true
+-- -- → inlay_hints_show_variable_type_hints               default: true
